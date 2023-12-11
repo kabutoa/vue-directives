@@ -1,7 +1,9 @@
 import permission from "./permission/index.js";
+import copy from "./copy/index.js";
 
 const directives = {
   permission,
+  copy,
 };
 
 export default {
