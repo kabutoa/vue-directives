@@ -13,6 +13,7 @@
     "vite": "^5.0.0"
   },
   "dependencies": {
+    "element-ui": "^2.15.14",
     "vue": "^2.7.0"
   }
 }
