@@ -3,10 +3,11 @@ const copy = {
     el._value = value;
     el.handler = () => {
       if (!el._value) {
-        console.log("value is empty");
+        console.log("value is empty!");
         return;
       }
       const textarea = document.createElement("textarea");
+      // 防止`iOS`自动唤起键盘
       textarea.readOnly = "readonly";
       textarea.style.position = "absolute";
       textarea.style.left = "-9999px";
