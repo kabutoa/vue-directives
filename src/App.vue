@@ -26,6 +26,11 @@
         <el-button v-debounce="onDebounce" type="primary">debounce</el-button>
       </el-col>
     </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-input v-model="excharText" v-exchar></el-input>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -34,6 +39,7 @@ export default {
   data() {
     return {
       copyText: "",
+      excharText: "",
     };
   },
   methods: {
