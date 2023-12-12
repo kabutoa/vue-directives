@@ -14,6 +14,11 @@
         <el-button v-copy="copyText" type="primary">copy</el-button></el-col
       >
     </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-button v-longpress="longpress" type="primary">longpress</el-button>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -22,8 +27,12 @@ export default {
   data() {
     return {
       copyText: "",
-      copyText1: "",
     };
+  },
+  methods: {
+    longpress() {
+      console.log("longpress is worked");
+    },
   },
 };
 </script>
