@@ -16,7 +16,14 @@
     </el-row>
     <el-row>
       <el-col :span="24">
-        <el-button v-longpress="longpress" type="primary">longpress</el-button>
+        <el-button v-longpress="onLongpress" type="primary"
+          >longpress</el-button
+        >
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-button v-debounce="onDebounce" type="primary">debounce</el-button>
       </el-col>
     </el-row>
   </div>
@@ -30,8 +37,11 @@ export default {
     };
   },
   methods: {
-    longpress() {
+    onLongpress() {
       console.log("longpress is worked");
+    },
+    onDebounce() {
+      console.log("debounce click");
     },
   },
 };
