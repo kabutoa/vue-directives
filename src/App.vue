@@ -37,9 +37,20 @@
     <el-row>
       <el-col :span="24"> </el-col>
     </el-row>
-    <el-row>
+    <el-row style="padding-bottom: 40px">
       <el-col :span="24">
         <el-button type="primary" v-drag>drag</el-button>
+      </el-col>
+    </el-row>
+    <!-- <div style="height: 800px"></div> -->
+    <el-row>
+      <el-col :span="24">
+        <img
+          style="display: block"
+          v-for="i in 20"
+          :key="i"
+          v-lazyload="`https://fakeimg.pl/350x200/?text=${i}`"
+        />
       </el-col>
     </el-row>
   </div>
@@ -66,6 +77,6 @@ export default {
 
 <style scoped>
 .el-row {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 </style>
