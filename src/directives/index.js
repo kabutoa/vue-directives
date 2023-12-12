@@ -5,6 +5,7 @@ import debounce from "./debounce/index.js";
 import exchar from "./exchar/index.js";
 import lazyload from "./lazyload/index.js";
 import watermarker from "./watermarker/index.js";
+import drag from "./drag/index.js";
 
 const directives = {
   permission,
@@ -14,6 +15,7 @@ const directives = {
   exchar,
   lazyload,
   watermarker,
+  drag,
 };
 
 export default {

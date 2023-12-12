@@ -34,6 +34,14 @@
         <el-input v-model="excharText" v-exchar></el-input>
       </el-col>
     </el-row>
+    <el-row>
+      <el-col :span="24"> </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-button type="primary" v-drag>drag</el-button>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
