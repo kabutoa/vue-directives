@@ -3,6 +3,8 @@ import copy from "./copy/index.js";
 import longpress from "./longpress/index.js";
 import debounce from "./debounce/index.js";
 import exchar from "./exchar/index.js";
+import lazyload from "./lazyload/index.js";
+import watermarker from "./watermarker/index.js";
 
 const directives = {
   permission,
@@ -10,6 +12,8 @@ const directives = {
   longpress,
   debounce,
   exchar,
+  lazyload,
+  watermarker,
 };
 
 export default {

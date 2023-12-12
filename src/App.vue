@@ -1,5 +1,8 @@
 <template>
-  <div id="app">
+  <div
+    id="app"
+    v-watermarker="{ text: 'test@qq.com', color: 'rgba(180, 180, 180, 0.3)' }"
+  >
     <el-row>
       <el-col :span="24">
         <el-button v-permission="'delete'" type="primary">delete</el-button>
