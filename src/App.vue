@@ -42,6 +42,11 @@
         <el-button type="primary" v-drag>drag</el-button>
       </el-col>
     </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-input v-model="focusText" v-focus></el-input>
+      </el-col>
+    </el-row>
     <!-- <div style="height: 800px"></div> -->
     <el-row>
       <el-col :span="24">
@@ -62,6 +67,7 @@ export default {
     return {
       copyText: "",
       excharText: "",
+      focusText: "",
     };
   },
   methods: {

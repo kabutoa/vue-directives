@@ -6,6 +6,7 @@ import exchar from "./exchar/index.js";
 import lazyload from "./lazyload/index.js";
 import watermarker from "./watermarker/index.js";
 import drag from "./drag/index.js";
+import focus from "./focus/index.js";
 
 const directives = {
   permission,
@@ -16,6 +17,7 @@ const directives = {
   lazyload,
   watermarker,
   drag,
+  focus,
 };
 
 export default {
