@@ -29,14 +29,6 @@
         <el-button v-debounce="onDebounce" type="primary">debounce</el-button>
       </el-col>
     </el-row>
-    <el-row>
-      <el-col :span="24">
-        <el-input v-model="excharText" v-exchar></el-input>
-      </el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="24"> </el-col>
-    </el-row>
     <el-row style="padding-bottom: 40px">
       <el-col :span="24">
         <el-button type="primary" v-drag>drag</el-button>
@@ -44,7 +36,25 @@
     </el-row>
     <el-row>
       <el-col :span="24">
-        <el-input v-model="focusText" v-focus></el-input>
+        <el-input
+          v-model="excharText"
+          v-exchar
+          placeholder="禁止输入指定字符"
+        ></el-input>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-input v-model="focusText" v-focus placeholder="自动聚焦"></el-input>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-input
+          v-model="spaceText"
+          v-space
+          placeholder="中英文空格替换"
+        ></el-input>
       </el-col>
     </el-row>
     <!-- <div style="height: 800px"></div> -->
@@ -68,6 +78,7 @@ export default {
       copyText: "",
       excharText: "",
       focusText: "",
+      spaceText: "",
     };
   },
   methods: {
